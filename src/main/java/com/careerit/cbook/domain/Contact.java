@@ -1,6 +1,7 @@
 package com.careerit.cbook.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,5 +16,6 @@ public class Contact {
         private String fullName;
         private String email;
         private String mobile;
+        @JsonFormat(pattern = "yyyy-MM-dd")
         private LocalDate dob;
 }
