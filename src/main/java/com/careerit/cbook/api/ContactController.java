@@ -41,7 +41,7 @@ public class ContactController {
 
          @GetMapping("/{id}")
         public boolean getContactById(@PathVariable UUID id){
-            return contactService.getById(id);
+            return contactService.getContact(id);
         }
 
 }
