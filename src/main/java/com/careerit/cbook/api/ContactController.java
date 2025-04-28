@@ -39,4 +39,9 @@ public class ContactController {
             return contactService.deleteContact(id);
         }
 
+         @GetMapping("/{id}")
+        public boolean getContactById(@PathVariable UUID id){
+            return contactService.getById(id);
+        }
+
 }
